@@ -17,7 +17,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 ```yaml
 goofys_app: goofys
 goofys_version: 0.24.0
-goofys_dl_url: https://github.com/liamg/{{ goofys_app }}/releases/download/v{{ goofys_version }}/{{ goofys_app }}-{{ goofys_osarch }}
+goofys_dl_url: https://github.com/kahing/{{ goofys_app }}/releases/download/v{{ goofys_version }}/{{ goofys_app }}
 goofys_bin_path: "/usr/local/bin/{{ goofys_app }}"
 goofys_bin_permission_mode: '0755'
 ```
