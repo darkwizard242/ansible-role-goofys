@@ -1,0 +1,8 @@
+---
+# tasks file for goofys
+
+- name: "Downloading and setting up {{ goofys_app }} {{ goofys_version }} on Debian based systems."
+  get_url:
+    url: "{{ goofys_dl_url }}"
+    dest: "{{ goofys_bin_path }}"
+    mode: "{{ goofys_bin_permission_mode }}"
