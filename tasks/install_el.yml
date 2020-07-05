@@ -1,7 +1,7 @@
 ---
-# tasks file for goofys
+# tasks file for goofys | EL Family
 
-- name: "Downloading and setting up {{ goofys_app }} {{ goofys_version }} on EL based systems."
+- name: EL Family | Downloading and setting up {{ goofys_app }} {{ goofys_version }} on EL based systems
   get_url:
     url: "{{ goofys_dl_url }}"
     dest: "{{ goofys_bin_path }}"
