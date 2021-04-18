@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: goofys
-  author: Ali Muhammad
+  author: darkwizard242
   description: Installs/Uninstalls 'goofys', a high performance posix-ish amazon s3 filesystem.
   company: none
   license: MIT
