@@ -4,5 +4,7 @@
 - name: EL Family | Downloading and setting up {{ goofys_app }} {{ goofys_version }} on EL based systems
   get_url:
     url: "{{ goofys_dl_url }}"
-    dest: "{{ goofys_bin_path }}"
-    mode: "{{ goofys_bin_permission_mode }}"
+    dest: "{{ goofys_bin_path }}/{{ goofys_app }}"
+    owner: "{{ goofys_file_owner }}"
+    group: "{{ goofys_file_group }}"
+    mode: "{{ goofys_file_mode }}"
