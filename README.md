@@ -18,19 +18,23 @@ Available variables are listed below (located in `defaults/main.yml`):
 goofys_app: goofys
 goofys_version: 0.24.0
 goofys_dl_url: https://github.com/kahing/{{ goofys_app }}/releases/download/v{{ goofys_version }}/{{ goofys_app }}
-goofys_bin_path: "/usr/local/bin/{{ goofys_app }}"
-goofys_bin_permission_mode: '0755'
+goofys_bin_path: /usr/local/bin
+goofys_file_owner: root
+goofys_file_group: root
+goofys_file_mode: '0755'
 ```
 
 ### Variables table:
 
-Variable                   | Value (default)                                                                                       | Description
--------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-goofys_app                 | goofys                                                                                                | Defines the app to install i.e. **goofys**
-goofys_version             | 0.24.0                                                                                                | Defined to dynamically fetch the desired version to install. Defaults to: **0.24.0**
-goofys_dl_url              | <https://github.com/kahing/{{> goofys_app }}/releases/download/v{{ goofys_version }}/{{ goofys_app }} | Defines URL to download the goofys binary from.
-goofys_bin_path            | "/usr/local/bin/{{ goofys_app }}"                                                                     | Defined to dynamically set the appropriate path to store goofys binary into. Defaults to (as generally available on any user's PATH): **/usr/local/bin/goofys**
-goofys_bin_permission_mode | '0755'                                                                                                | Defines the permission mode level for the file.
+Variable         | Description
+---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------
+goofys_app       | Defines the app to install i.e. **goofys**
+goofys_version   | Defined to dynamically fetch the desired version to install. Defaults to: **0.24.0**
+goofys_dl_url    | Defines URL to download the goofys binary from.
+goofys_bin_path  | Defined to dynamically set the appropriate path to store goofys binary into. Defaults to (as generally available on any user's PATH): **/usr/local/bin**
+goofys_owner     | Owner for the binary file of goofys.
+goofys_group     | Group for the binary file of goofys.
+goofys_file_mode | Mode for the binary file of goofys.
 
 ## Dependencies
 
@@ -72,4 +76,4 @@ For customizing behavior of role (i.e. placing binary of **goofys** package in d
 
 ## Author Information
 
-This role was created by [Ali Muhammad](https://www.linkedin.com/in/ali-muhammad-759791130/).
+This role was created by [Ali Muhammad](https://www.alimuhammad.dev/).
