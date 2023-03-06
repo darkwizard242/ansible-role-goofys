@@ -2,7 +2,7 @@
 # tasks file for goofys |  Debian/Ubuntu Family
 
 - name: Debian/Ubuntu Family | Downloading and setting up {{ goofys_app }} {{ goofys_version }}
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ goofys_dl_url }}"
     dest: "{{ goofys_bin_path }}/{{ goofys_app }}"
     owner: "{{ goofys_file_owner }}"
